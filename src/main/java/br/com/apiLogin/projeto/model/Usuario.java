@@ -12,7 +12,7 @@ public class Usuario {
     private Integer id;
 
     @Column( name = "nome_completo", length = 200, nullable = true)
-    private String nome;
+    private String nome_completo;
 
     @Column( name = "email", length = 50, nullable = true)
     private String email;
@@ -31,10 +31,10 @@ public class Usuario {
     }
 
     public String getNome() {
-        return nome;
+        return nome_completo;
     }
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNome(String nome_completo) {
+        this.nome_completo = nome_completo;
     }
 
     public String getEmail() {
